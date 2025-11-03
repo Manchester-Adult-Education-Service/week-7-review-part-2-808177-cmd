@@ -106,7 +106,12 @@ print("-------------------------------------------\n"
 # Blast off!
 #
 # Write your code below:
-
+start = int(input("Enter a starting number:"))
+while start >= 1:
+    print(start)
+    start -= 1
+    
+    
 
 # -------------------------------------------
 # Submitting Your Work
