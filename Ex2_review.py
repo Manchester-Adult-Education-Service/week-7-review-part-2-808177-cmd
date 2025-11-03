@@ -63,7 +63,13 @@ print("-------------------------------------------\n"
 # Output: Excellent!
 #
 # Write your code below:
-
+score = int(input("Enter your score (0-100):"))
+if score >= 70:
+    print("Excellent!")
+elif score >= 50:
+     print("Good effort!")
+else:
+    print("need improvement.")
 
 # -------------------------------------------
 # Submitting Your Work
