@@ -162,7 +162,7 @@ for i in range(1,11):
 # -------------------------------------------
 
 
-# Task 5: Number Guessing Game
+#Task 5: Number Guessing Game
 # -------------------------------------------
 print("-------------------------------------------\n"
     + "Task 5: Number Guessing Game\n"
@@ -183,7 +183,16 @@ print("-------------------------------------------\n"
 # Correct! Well done.
 #
 # Write your code below:
-
+secret_number = 7
+guess = None
+guess = int(input("Enter your guess (1-10):"))
+while guess != secret_number:
+    if guess < secret_number:
+        print("Too low!")
+    else:
+        print("Too high!")
+    guess = int(input("Enter your guess(1-10):"))
+    print("correct! well done.")
 
 # -------------------------------------------
 # Submitting Your Work
