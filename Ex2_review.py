@@ -26,6 +26,11 @@ print("-------------------------------------------\n"
 # Output: 7 is odd
 #
 # Write your code below:
+number = int(input("Enter a number"))
+if number % 2 == 0:
+     print(f"{number} is even")
+else:
+    print(f"{number} is odd")
 
 
 # -------------------------------------------
@@ -58,7 +63,13 @@ print("-------------------------------------------\n"
 # Output: Excellent!
 #
 # Write your code below:
-
+score = int(input("Enter your score (0-100):"))
+if score >= 70:
+    print("Excellent!")
+elif score >= 50:
+     print("Good effort!")
+else:
+    print("need improvement.")
 
 # -------------------------------------------
 # Submitting Your Work
@@ -95,7 +106,12 @@ print("-------------------------------------------\n"
 # Blast off!
 #
 # Write your code below:
-
+start = int(input("Enter a starting number:"))
+while start >= 1:
+    print(start)
+    start -= 1
+    
+    
 
 # -------------------------------------------
 # Submitting Your Work
@@ -129,7 +145,9 @@ print("-------------------------------------------\n"
 # 3 x 10 = 30
 #
 # Write your code below:
-
+number = int(input("Enter a number"))
+for i in range(1,11):
+    print(f"{number} * {i} = {number * i}")
 
 # -------------------------------------------
 # Submitting Your Work
@@ -144,7 +162,7 @@ print("-------------------------------------------\n"
 # -------------------------------------------
 
 
-# Task 5: Number Guessing Game
+#Task 5: Number Guessing Game
 # -------------------------------------------
 print("-------------------------------------------\n"
     + "Task 5: Number Guessing Game\n"
@@ -165,7 +183,16 @@ print("-------------------------------------------\n"
 # Correct! Well done.
 #
 # Write your code below:
-
+secret_number = 7
+guess = None
+guess = int(input("Enter your guess (1-10):"))
+while guess != secret_number:
+    if guess < secret_number:
+        print("Too low!")
+    else:
+        print("Too high!")
+    guess = int(input("Enter your guess(1-10):"))
+    print("correct! well done.")
 
 # -------------------------------------------
 # Submitting Your Work
@@ -201,28 +228,35 @@ print("-------------------------------------------\n"
 # Output: The total is 19
 #
 # Write your code below:
+total = 0
+for i in range(1,6):
+    number = int(input(f"Enter number {i}:"))
+    total += number
+    print(f"The total is {total}")
 
 
 
-
-# Extension 2:
+# Extension 1:
 # -------------------------------------------
 print("-------------------------------------------\n"
-    + "Extension 2:\n"
+    + "Extension 1:\n"
     + "-------------------------------------------")
-# Create a simple login simulation.
-# - The correct password is "python123".
-# - Use a while loop that keeps asking until the user types the correct password.
-# - Print "Access granted!" when correct.
+# Create a loop that asks the user for a number 5 times.
+# Add up all the numbers and print the total.
 #
 # Example:
-# Enter password: hello
-# Output: Incorrect, try again.
-# Enter password: python123
-# Output: Access granted!
-#
+# Enter number 1: 3
+# Enter number 2: 5
+# Enter number 3: 2
+# Enter number 4: 8
+# Enter number 5: 1
+# Output: The total is 19
 # Write your code below:
-
+total = 0
+for i in range(1,6):
+    number = int(input(f"Enter number{i}:"))
+    total += number
+    print(f"The total is {total}")
 
 
 
@@ -251,9 +285,27 @@ print("-------------------------------------------\n"
 # 1 2 3 4 5 6 7 8 9 10
 #
 # Write your code below:
+while True:
+    print("Menu:")
+    print("1. count to 10")
+    print("2. show enen numbers between 1-20")
+    print("3. Exit")
 
+    choice = input("Enter your choice:")
 
-
+    if choice == "1":
+        for i in range(1,11):
+            print(i, end="")
+        print()
+    elif choice == "2":
+        for i in range(2,21,2):
+            print(i, end="")
+        print()
+    elif choice == "3":
+        print("Exiting the program.Goodbye!")
+    else:
+        print("Invalid choice. please try again.")
+        break
 
 # -------------------------------------------
 # Submitting Your Work
