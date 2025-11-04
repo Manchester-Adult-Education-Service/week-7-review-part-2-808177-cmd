@@ -228,28 +228,35 @@ print("-------------------------------------------\n"
 # Output: The total is 19
 #
 # Write your code below:
+total = 0
+for i in range(1,6):
+    number = int(input(f"Enter number {i}:"))
+    total += number
+    print(f"The total is {total}")
 
 
 
-
-# Extension 2:
+# Extension 1:
 # -------------------------------------------
 print("-------------------------------------------\n"
-    + "Extension 2:\n"
+    + "Extension 1:\n"
     + "-------------------------------------------")
-# Create a simple login simulation.
-# - The correct password is "python123".
-# - Use a while loop that keeps asking until the user types the correct password.
-# - Print "Access granted!" when correct.
+# Create a loop that asks the user for a number 5 times.
+# Add up all the numbers and print the total.
 #
 # Example:
-# Enter password: hello
-# Output: Incorrect, try again.
-# Enter password: python123
-# Output: Access granted!
-#
+# Enter number 1: 3
+# Enter number 2: 5
+# Enter number 3: 2
+# Enter number 4: 8
+# Enter number 5: 1
+# Output: The total is 19
 # Write your code below:
-
+total = 0
+for i in range(1,6):
+    number = int(input(f"Enter number{i}:"))
+    total += number
+    print(f"The total is {total}")
 
 
 
@@ -278,9 +285,27 @@ print("-------------------------------------------\n"
 # 1 2 3 4 5 6 7 8 9 10
 #
 # Write your code below:
+while True:
+    print("Menu:")
+    print("1. count to 10")
+    print("2. show enen numbers between 1-20")
+    print("3. Exit")
 
+    choice = input("Enter your choice:")
 
-
+    if choice == "1":
+        for i in range(1,11):
+            print(i, end="")
+        print()
+    elif choice == "2":
+        for i in range(2,21,2):
+            print(i, end="")
+        print()
+    elif choice == "3":
+        print("Exiting the program.Goodbye!")
+    else:
+        print("Invalid choice. please try again.")
+        break
 
 # -------------------------------------------
 # Submitting Your Work
